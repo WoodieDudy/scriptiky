@@ -18,8 +18,7 @@ done
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' /etc/zsh/.zshrc
 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/g' /etc/zsh/.zshrc
 
-
-curl https://gist.githubusercontent.com/WoodieDudy/2f4847fda16b29ab9f009eac4d0aecc5/raw/de5f5dd272988b6e1a65d4b80df3c5ae4ebde23b/.p10k.zsh -o /etc/zsh/.p10k.zsh
+curl https://raw.githubusercontent.com/WoodieDudy/scriptiky/main/zsh/p10k.zsh -o /etc/zsh/.p10k.zsh
 echo '[[ ! -f /etc/zsh/.p10k.zsh ]] || source /etc/zsh/.p10k.zsh' >> /etc/zsh/.zshrc
 
 echo PATH=$PATH >> /etc/zsh/.zshrc
